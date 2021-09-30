@@ -34,8 +34,9 @@ export default {
     //ModalBootstrap
     Pare
   }
+  
 }
-    Pare
+  
 </script>
 
 <style lang="scss">

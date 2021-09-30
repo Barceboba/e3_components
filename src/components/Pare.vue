@@ -6,18 +6,16 @@
       </template>
 
       <template v-slot:body>
-        <input type="number" v-model.number="euro" />
+        <input type="number" v-model.number="euro"/>
       </template>
 
       <template v-slot:footer>
-        <button type="button" class="btn btn-primary" data-dismiss="modal" @click="message = 'Heu tancat el modal'">Tancar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" @click="missatge = 'Heu tancat el Modal'">Tancar</button>
       </template>
   </modalBootstrap>
   <h3>
       <br>
-      <div class="alert alert-light">
-        {{ message }}
-      </div>
+      <div class="alert alert-light">{{ missatge }}</div>
     </h3>
  </div>
 </template>

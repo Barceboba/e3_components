@@ -4,8 +4,8 @@ export default {
     name: 'Pare',
     data() {
         return {
-            euro: "",
-            message: "",
+            euro: "0",
+            missatge: "",
         }
     },
     components: {

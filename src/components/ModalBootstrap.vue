@@ -1,14 +1,12 @@
 <template>
   <div>
     <!-- Button trigger modal -->
-    <button
-      type="button" class="mt-5 btn btn-primary" data-bs-toggle="modal"
-      data-bs-target="#exampleModal"  @click="message = ''">
-      € a $
+    <button type="button" class="mt-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalsFirst"  @click="missatge =''">
+      D'€uros a dolar$
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalsFirst" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -19,8 +17,8 @@
             <!-- slot body -->
             <slot name="body"></slot>
             <p>
-              <br>
-            El canvi de {{ euros }} € a dòlars són {{ euros | euroDolar }} $
+              <br/>
+              Doncs {{ euros }} € són {{ euros | conversio }} $
             </p>
           </div>
           <div class="modal-footer">

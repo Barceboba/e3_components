@@ -2,7 +2,7 @@ export default {
     name: 'ModalBootstrap',
     props: ['euros'],
     filters: {
-        euroDolar(value) {
+        conversio(value) {
             return value * 1.23;
         }
     }
