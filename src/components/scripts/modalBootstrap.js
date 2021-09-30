@@ -1,8 +1,9 @@
 export default {
     name: 'ModalBootstrap',
-    data() {
-        return {
-            modalShow: false
+    props: ['euros'],
+    filters: {
+        euroDolar(value) {
+            return value * 1.23;
         }
     }
 }
