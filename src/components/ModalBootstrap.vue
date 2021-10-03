@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Button trigger modal -->
-    <button type="button" class="mt-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalsFirst"  @click="missatge =''">
+    <button type="button" class="mt-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalsFirst">
       D'€uros a dolar$
     </button>
 
@@ -16,10 +16,7 @@
           <div class="modal-body">
             <!-- slot body -->
             <slot name="body"></slot>
-            <p>
-              <br/>
-              Doncs {{ euros }} € són {{ euros | conversio }} $
-            </p>
+            
           </div>
           <div class="modal-footer">
             <!-- slot footer -->
@@ -32,11 +29,5 @@
 </template>
 
 <script  src='./scripts/modalBootstrap.js'>
-/*  export default {
-    data() {
-      return {
-        modalShow: false
-      }
-    }
-  } */
+
 </script>

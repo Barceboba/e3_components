@@ -4,11 +4,16 @@ export default {
     name: 'Pare',
     data() {
         return {
-            euro: "0",
-            missatge: "",
+            euros: "0",
+            display : false
         }
     },
     components: {
         ModalBootstrap
+    },
+    filters: {
+        conversio: function(value) {
+            return value * 1.23;
+        }
     }
 }
